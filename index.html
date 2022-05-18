@@ -37,8 +37,14 @@
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+            <input class="form-control me-2" type="search" list="pets" placeholder="Поиск" aria-label="Search">
             <button class="btn btn-primary" onclick="">Поиск</button>
+            <datalist id="pets">
+              <option value="Кошка"/>
+              <option value="Собака"/>
+              <option value="Корова"/>
+              <option value="Крокодил"/>
+            </datalist>
           </form>
         </div>
       </div>
