@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <!-- Обязательные метатеги -->
     <meta charset="utf-8">
@@ -10,94 +11,107 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <title>GET PET BACK</title>
 </head>
+
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../image/logo.jpg" class="w-25 rounded-3" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/profile.html">Личный кабинет</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/registration.html">Регистрация</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/add_pet.html">Добавить объявление</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/search.html">Поиск по объявлениям</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
-                    <button class="btn btn-primary" onclick="">Поиск</button>
-                </form>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="../image/logotype.svg" class="rounded-3" style="max-width: 300px;" alt="logo"></a>
+                alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/profile.html">Личный кабинет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/registration.html">Регистрация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/add_pet.html">Добавить объявление</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/search.html">Поиск по объявлениям</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn btn-warning" onclick="">Поиск</button>
+                    </form>
+                </div>
             </div>
+        </nav>
+    </header>
+
+    <main style="min-height: 70vh;">
+        <h2 class="text-center text-white bg-warning m-2">Регистрация</h2>
+        <div class="p-3">
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="validationDefault01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" id="validationDefault02" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefaultUsername" class="form-label">Имя пользователя</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        <input type="text" class="form-control" id="validationDefaultUsername"
+                            aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Город</label>
+                    <input type="text" class="form-control" id="validationDefault03" value="Санкт-Петербург" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationDefault04" class="form-label">Область</label>
+                    <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">Выберите...</option>
+                        <option>Приморский</option>
+                        <option>Петроградский</option>
+                        <option>Красногвардейский</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationDefault05" class="form-label">Индекс</label>
+                    <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Принять условия и соглашения
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-warning" type="submit">Отправить форму</button>
+                </div>
+            </form>
         </div>
-    </nav>
-</header>
+    </main>
 
-<main style="min-height: 70vh;">
-    <h2 class="text-center text-white bg-primary m-2">Регистрация</h2>
-    <div class="p-3">
-    <form class="w-50 m-auto border p-3" style="min-width: 300px;">
-        <div class="mb-3">
-            <label for="name" class="form-label">Введите имя:</label>
-            <input type="text" class="form-control" id="name">
-            <div id="emailHelp1" class="form-text">Используйте кириллические буквы</div>
-        </div>
+    <footer class="border-bottom bg-warning">
+        <p class="text-white p-3">GET PET BACK © Copyright, 2022</p>
+        <p class="text-white p-3">Все права защищены</p>
+    </footer>
 
-        <div class="mb-3">
-            <label for="phone" class="form-label">Введите свой телефон:</label>
-            <input type="tel" class="form-control" id="phone">
-            <div  class="form-text">Используйте цифры, +, -.</div>
-        </div>
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
 
-        <div class="mb-3">
-            <label for="email" class="form-label">Введите адрес электронной почты</label>
-            <input type="email" class="form-control" id="email">
-            <div  class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
-        </div>
-
-        <div class="mb-3">
-            <label for="password" class="form-label">Введите пароль:</label>
-            <input type="password" class="form-control" id="password">
-            <div  class="form-text">Не менее 7 символов, обязательно: 1 - цифра, 1 - строчная буква, 1 - заглавная буква</div>
-        </div>
-
-        <div class="mb-3">
-            <label for="confirm_password" class="form-label">Повторите пароль:</label>
-            <input type="password" class="form-control" id="confirm_password">
-            <div class="form-text"></div>
-        </div>
-
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="check">
-            <label class="form-check-label" for="check">Согласие на обработку персональных данных</label>
-        </div>
-
-        <input type="submit" class="btn btn-primary" value="Зарегистрироваться">
-    </form>
-    </div>
-</main>
-
-<footer class="border-bottom bg-primary">
-    <p class="text-white p-3">GET PET BACK © Copyright, 2022</p>
-    <p class="text-white p-3">Все права защищены</p>
-</footer>
-
-<!-- Дополнительный JavaScript; выберите один из двух! -->
-
-<!-- Вариант 1: Bootstrap в связке с Popper -->
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
-<script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
